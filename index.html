@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="css/index.css">
+
+  <!--  Подключение скриптов! -->
+  <script src="js/api.js" defer></script>
+  <script src="js/recipe.js" defer></script>
+  <script src="js/list.js" defer></script>
+  <script src="js/create.js" defer></script>
+  <script src="js/search.js" defer></script>
+
+  <div class="wrap-logo">
+    <img class="logo" src="assets/logo.jpg" >
+    <img class="logoapp" src="assets/app.jpg">
+    </div>
+
+</head>
+
+<body>
+  <nav>
+  </nav>
+  <div class="container">
+    <!-- Content here -->
+    <div class="left-column">
+      <h2 class="addrecipe">Add Recipe</h2>
+
+      <label class="nim" for="recipe-name">Name:</label>
+      <input type="text" id="recipe-name" required>
+      <br />
+
+      <label class="nim" for="recipe-ingredients">Ingredients:</label>
+      <textarea id="recipe-ingredients" required></textarea>
+      <br />
+
+      <label class="nim" for="recipe-method">Method:</label>
+      <textarea id="recipe-method" required></textarea>
+      <br />
+
+      <button id="submit" class="submit">Add Recipe</button>
+    </div>
+    <div class="search-container">
+      <input type="text" class="search" placeholder="search">
+    </div>
+    <div class="recipes">
+    <div class="right-column">
+      <div id="recipe-list">
+        <div class="card mb-2">
+          <div class="name">name</div>
+        </div>
+      </div>
+      <!-- <div id="no-recipes">You have no recipes.</div> -->
+    </div>
+    <div class="recipe-view invisible">
+      <div class="view-name">name</div>
+      <div class="view-ingr"><ul class="view-ingr-ul"></ul></div>
+      <div class="view-method">method</div>
+      <button class="view-delete">delete</button>
+      <button class="view-edit">edit</button>
+      <div class="list-edit"></div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
